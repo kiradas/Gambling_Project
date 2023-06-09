@@ -12,7 +12,7 @@ app = Dash(__name__, title="Gambling_Project")
 df = pd.read_csv('https://docs.google.com/spreadsheets/d/1jK_z5sy4XxaUru3LU69a8ryy04Tf10gf0sCy2xev_EE/gviz/tq?tqx=out:csv&sheet=Sheet3')
 df = df.T.reset_index()
 df.columns = df.iloc[0].values
-df =  df.iloc[1:]
+df =  df.iloc[2:]
 weeks = '''13.03-19.03	20.03-26.03	27.03-02.04	03.04-09.04	10.04-16.04	17.04-23.04	24.04-30.04	01.05-07.05	08.05-14.05	15.05-21.05	22.05-28.05	29.05-04.06'''.split('	')
 cls = df.columns.values
 regs = cls[1:4]
