@@ -1,4 +1,4 @@
-# Dash CSV Template: Gambling_Project
+# Gambling_Project
 
 Created on 2023-06-09 21:22:21.312659
 
