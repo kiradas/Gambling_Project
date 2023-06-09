@@ -10,6 +10,9 @@ import pandas as pd
 app = Dash(__name__, title="Gambling_Project")
 
 df = pd.read_csv('https://docs.google.com/spreadsheets/d/1jK_z5sy4XxaUru3LU69a8ryy04Tf10gf0sCy2xev_EE/gviz/tq?tqx=out:csv&sheet=Sheet3')
+df = df.T.reset_index()
+df.columns = df.iloc[0].values
+df =  df.iloc[1:]
 weeks = ['2023-11', '2023-12', '2023-13', '2023-14', '2023-15', '2023-16', '2023-17', '2023-18', '2023-19', '2023-20', '2023-21', '2023-22']
 cls = df.columns.values
 regs = cls[1:4]
